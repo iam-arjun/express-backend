@@ -1,0 +1,15 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Creating weather app",
+  "main": "app2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun Phuyel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "requests": "^0.3.0"
+  }
+}

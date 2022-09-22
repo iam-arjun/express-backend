@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .container {
+            margin: 200px auto;
+            width: 400px;
+            height: 400px;
+        }
+
+        .search_bar {
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #search_val {
+            width: 90%;
+            height: 90%;
+            font-size: 20px;
+            color: darkcyan;
+
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .col-lg-10 {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        #sub_btn {
+            color: white;
+        }
+
+        .header {
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #cityName {
+            font-size: 20px;
+            transition: 0.1s ease;
+            color: green;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show_temp {
+            font-size: 30px;
+            color: white;
+            transition: 0.1s ease;
+        }
+
+        #celsius {
+            font-size: 19px;
+            transition: 0.1s ease;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container bg-info ">
+        <h1 class="header"> SEARCH THE TEMPERATURE BY ENTERING THE CITY NAME</h1>
+        <div class="search_bar">
+            <input type="text" id="search_val" class="mx-3">
+
+
+            <button type="submit" class="btn btn-lg bg-success p-1 mx-1 " id="sub_btn">Search</button>
+
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-lg-10">
+
+
+                <h1 id="cityName" class="mx-2 text-uppercase "></h1>
+
+                <h2 class="show_temp" id="temp"> </h2>
+                <h1 class="hide" id="celsius"> <sup class="text-warning ">o</sup>Celsius </h1>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="google_maps_code">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.8515583224444!2d87.98576401518882!3d26.685229583226107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5ba212806df0f%3A0x11c31b00f6a3d9d8!2sArjundhara%20Jaleshwor%20Dham!5e0!3m2!1sen!2snp!4v1659760613175!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
